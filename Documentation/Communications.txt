@@ -1,0 +1,28 @@
+Overview:
+	See flowchart diagram
+
+
+
+EZ-B to Atmega328p(MCU1) -- UART:
+
+	Structure:
+		I. Data Direction
+		II. Datatype
+		III. Type ending
+		IV. Data/Instruction
+		V. End
+
+	Definitions:
+		Data Direction:
+			“E” is sent if data or an instruction is requested by the EZ-B
+			“M” is sent if data or an instruction is requested by MCU1
+
+		Datatype:
+			0-29 are reserved for instructions
+			30-99 are reserved for datatypes
+
+			I. "01" for Move instruction
+
+
+Instruction defenitions
+
