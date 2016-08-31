@@ -88,3 +88,5 @@ Data Definitions
 
 Examples
 	To reset bot motor drivers: E000|1|ENDSTREAMEND|
+	Multiple instructions:
+		Move bot with parameter - rotate 30.2 rotations, at 50 speed, report back when done but do not report after each rotation: E002|30.2,50,1,0|ENDSTREAMEND|
