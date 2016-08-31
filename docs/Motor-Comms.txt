@@ -16,29 +16,32 @@ Atmega328p(MCU1) to ATtiny85 motor controllers -- I2C:
 		Data/Instruction
 			Data is sent according to structures set out below. Different values are seperated by ","
 			
-			between0-4
-			5-9
+			between 00000000-00001000 (0-8)
+			Data: 00001001-11111110 (9-254)
 			
 		End
-			End is signified by sending "ED"
+			End is automatically flagged
 
 
 			
 			
 Instruction definitions
 	
-	Reset (0|)
+	Reset (00000000)
 	Resets specified mcu
 		[null]
 	
-	Move (1|)
+	Move (00000001)
 	Moves bot by parameter
-		(Float)Rotations of wheel to complete
-		(Int)Speed: 0-127
+		(Int_8bit)how many 1/16th of a rotation to make
+	
+	Move (00000010)
+	Sets speed at which to move robot
+		(Int_8bit)How fast to go
 
 Data definitions
 
-	Rotations completed (5|)
+	Rotations completed (00001001)
 	Gives the amount of rotations completed and whether it prematurely finished
 		(null)
 		
