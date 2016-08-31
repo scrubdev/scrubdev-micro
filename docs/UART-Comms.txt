@@ -52,7 +52,7 @@ Instruction Definitions
 		(Float)Rotations of wheel to complete
 		(Int)Speed: 0-127
 		(Bool)Report back when done
-		(Bool)Report after every rotation
+		(Bool)Report after every rotation //Not currently working. Leave False
 		
 	Rotate (003)
 	Rotates bot by parameter
@@ -66,7 +66,7 @@ Instruction Definitions
 		
 	Home request (005)
 	Requests server to recalibrate
-		[no data]
+		[null]
 		
 	
 		
