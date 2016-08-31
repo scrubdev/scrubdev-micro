@@ -6,7 +6,6 @@ Overview:
 
 
 EZ-B to Atmega328p(MCU1) -- UART:
-
 	Structure:
 		1. Data Direction
 		2. Datatype
@@ -39,9 +38,7 @@ EZ-B to Atmega328p(MCU1) -- UART:
 
 
 			
-			
 Instruction Definitions
-	
 	Reset (000)
 	Resets specified components of robot
 		(Int)Components to reset: 0=ALL, 1=Motor Drivers, 2=Arm Driver
@@ -71,9 +68,9 @@ Instruction Definitions
 	Requests server to recalibrate
 		(Bool)Give Request, false=Cancel request
 		
+	
 		
 Data Definitions
-
 	Battery (400)
 	Battery level
 		(Int)Battery level of Electronics battery: 0-100
@@ -90,5 +87,4 @@ Data Definitions
 		
 
 Examples
-	
 	To reset bot motor drivers: E000|1|ENDSTREAMEND|
