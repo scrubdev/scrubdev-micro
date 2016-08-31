@@ -28,6 +28,7 @@ void receiveEvent(uint8_t num_bytes){
   {
     case 00000000:
     //resets MCU
+    //Bit o' C
       #define soft_reset()        \
       do                          \
       {                           \
