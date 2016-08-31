@@ -1,0 +1,55 @@
+Overview:
+	See flowchart diagram
+	
+	Parameters in instructions are seperated by ","
+
+
+Atmega328p(MCU1) to ATtiny85 motor controllers -- I2C:
+
+	Structure:
+		1. Address
+		2. Data/Instruction
+		3. End
+
+
+	Definitions:
+		Data/Instruction
+			Data is sent according to structures set out below. Different values are seperated by ","
+			
+			between0-4
+			5-9
+			
+		End
+			End is signified by sending "ED"
+
+
+			
+			
+Instruction definitions
+	
+	Reset (0,)
+	Resets specified mcu
+		(null)
+	
+	Move (1,)
+	Moves bot by parameter
+		(Float)Rotations of wheel to complete
+		(Int)Speed: 0-127
+
+Data definitions
+
+	Rotations completed (5,)
+	Gives the amount of rotations completed and whether it prematurely finished
+		(null)
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
