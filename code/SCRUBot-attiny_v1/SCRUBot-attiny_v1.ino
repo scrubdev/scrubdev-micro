@@ -38,13 +38,25 @@ void receiveEvent(uint8_t num_bytes){
           }                       \
       } while(0)
       break;
-      
+
+      case 00000001:
+        //move instruction
+        
+        break;
+
+      case 00000010:
+        //update speed function
+        break;
   }
 
   
 }
 
 void requestEvent(){
+  
+}
+
+void moveFunction(){
   
 }
 
