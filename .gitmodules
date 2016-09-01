@@ -1,3 +1,6 @@
 [submodule "libs/TinyWireS"]
 	path = libs/TinyWireS
 	url = https://github.com/rambo/TinyWire.git
+[submodule "libs/ArduinoSerialCommand"]
+	path = libs/ArduinoSerialCommand
+	url = https://github.com/scogswell/ArduinoSerialCommand
