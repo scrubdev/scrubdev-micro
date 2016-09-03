@@ -1,4 +1,4 @@
-Overview:
+﻿Overview:
 	See flowchart diagram
 	
 	Parameters in instructions are seperated by ","
@@ -15,8 +15,8 @@ EZ-B to Atmega328p(MCU1) -- UART:
 
 	Definitions:
 		Data Direction:
-			"E"� is sent if data or an instruction is to be sent by the EZ-B or a request for data is sent from MCU1
-			"M"� is sent if data or an instruction is to be sent by MCU1 or a request for data is sent from EZ-B
+			"E" is sent if data or an instruction is to be sent by the EZ-B or a request for data is sent from MCU1
+			"M" is sent if data or an instruction is to be sent by MCU1 or a request for data is sent from EZ-B
 
 		Datatype:
 			0-399 are reserved for instructions
@@ -62,7 +62,7 @@ Instruction Definitions
 		
 	Collision Report Mode (004)
 	Puts Bot in collision reporting mode that sends collision as data to computer
-		(Bool)Report any collision
+		(Bool) Report mode or not
 		
 	Home request (005)
 	Requests server to recalibrate
@@ -89,4 +89,5 @@ Data Definitions
 Examples
 	To reset bot motor drivers: E000|1|ENDSTREAMEND|
 	Multiple instructions:
-		Move bot with parameter - rotate 30.2 rotations, at 50 speed, report back when done but do not report after each rotation: E002|30.2,50,1,0|ENDSTREAMEND|
+		Move bot with parameter - rotate 30.2 rotations, at 50 speed, report back when done but do not report after each rotation: 
+		E002|30.2,50,1,0|ENDSTREAMEND|
